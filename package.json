@@ -7,6 +7,9 @@
   "license": "MIT",
   "main": "./dist/d3-i18n.js",
   "jsnext:main": "index.js",
+  "dependencies": {
+    "events": "^1.1.1"
+  },
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
     "rollup": "^0.26.3",
@@ -17,8 +20,5 @@
   "scripts": {
     "build": "rollup -c -n d3 -o dist/d3-i18n.js",
     "build:min": "uglifyjs dist/d3-i18n.js -c -m -o dist/d3-i18n.min.js"
-  },
-  "dependencies": {
-    "events": "^1.1.1"
   }
 }
