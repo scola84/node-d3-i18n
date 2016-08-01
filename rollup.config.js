@@ -3,7 +3,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 
 export default {
-  entry: './index.js',
+  entry: 'index.js',
   format: 'umd',
   globals: {
     'moment': 'moment',
