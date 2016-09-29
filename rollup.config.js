@@ -5,17 +5,20 @@ import resolve from 'rollup-plugin-node-resolve';
 export default {
   entry: 'index.js',
   format: 'umd',
+  external: [
+    'moment',
+    'moment-timezone'
+  ],
   globals: {
     'moment': 'moment',
     'moment-timezone': 'moment'
   },
   plugins: [
     resolve({
-      jsnext: true,
-      skip: ['moment', 'moment-timezone']
+      jsnext: true
     }),
     commonjs({
-      exclude: ['**/node_modules/lodash-es/**']
+      exclude: ['**/lodash-es/**']
     }),
     buble()
   ]

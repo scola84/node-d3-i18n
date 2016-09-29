@@ -11,14 +11,18 @@
     "@scola/i18n": "3.0.1"
   },
   "devDependencies": {
-    "rollup": "^0.36.0",
+    "rollup": "^0.36.1",
     "rollup-plugin-buble": "^0.14.0",
     "rollup-plugin-commonjs": "^5.0.4",
     "rollup-plugin-node-resolve": "^2.0.0",
     "uglify-js": "^2.7.3"
   },
   "scripts": {
-    "build": "rollup -c -n d3 -o dist/d3-i18n.js",
-    "build:min": "uglifyjs dist/d3-i18n.js -c -m -o dist/d3-i18n.min.js"
+    "build": "npm run cleanup && npm run rollup",
+    "build:min": "npm run build && npm run min",
+    "cleanup": "rm -rf dist",
+    "min": "npm run min:js && gzip -9 -k dist/*",
+    "min:js": "uglifyjs dist/d3-i18n.js -m -o dist/d3-i18n.min.js",
+    "rollup": "rollup -c -n d3 -o dist/d3-i18n.js"
   }
 }
