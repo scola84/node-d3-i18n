@@ -6,10 +6,12 @@ export default {
   entry: 'index.js',
   format: 'umd',
   external: [
+    'events',
     'moment',
     'moment-timezone'
   ],
   globals: {
+    'events': 'events',
     'moment': 'moment',
     'moment-timezone': 'moment'
   },
