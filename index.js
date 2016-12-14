@@ -1,4 +1,4 @@
-import { I18n } from '@scola/i18n';
+import { I18n } from '@scola/core';
 
 let instance = null;
 
