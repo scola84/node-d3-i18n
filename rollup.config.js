@@ -10,12 +10,10 @@ export default {
   moduleName: 'd3',
   external: [
     '@scola/core',
-    'moment',
     'moment-timezone'
   ],
   globals: {
     '@scola/core': 'core',
-    'moment': 'moment',
     'moment-timezone': 'moment'
   },
   plugins: [
