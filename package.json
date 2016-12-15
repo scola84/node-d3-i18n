@@ -8,6 +8,6 @@
   "main": "./dist/d3-i18n.js",
   "jsnext:main": "index.js",
   "dependencies": {
-    "@scola/core": "1.1.0"
+    "@scola/core": "1.2.0"
   }
 }
