@@ -8,6 +8,6 @@
   "main": "./index.js",
   "jsnext:main": "./index.js",
   "dependencies": {
-    "@scola/i18n": "^5.1.0"
+    "@scola/i18n": "^6.0.0"
   }
 }
